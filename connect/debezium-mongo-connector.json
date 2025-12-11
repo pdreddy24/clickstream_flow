@@ -1,0 +1,22 @@
+{
+  "name": "mongo-cdc-connector",
+  "config": {
+    "connector.class": "io.debezium.connector.mongodb.MongoDbConnector",
+    "tasks.max": "1",
+
+    "mongodb.connection.string": "mongodb+srv://deekshithapalvai:0IoZ9mSeWertqRe3@cluster0.4hgtrtg.mongodb.net/AI?retryWrites=true&w=majority&appName=Cluster0",
+    "mongodb.user": "deekshithapalvai",
+    "mongodb.password": "0IoZ9mSeWertqRe3",
+
+    "database.include.list": "AI",
+
+    "collection.include.list": "AI.counters,AI.events,AI.users,AI.userstats",
+
+    "snapshot.mode": "initial",
+    "tombstones.on.delete": "false",
+
+    "topic.prefix": "mongo",
+
+    "mongodb.members.auto.discover": "false"
+  }
+}
