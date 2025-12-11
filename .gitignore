@@ -1,0 +1,60 @@
+# -----------------------------
+# PYTHON
+# -----------------------------
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+
+# -----------------------------
+# ENV / SECRETS
+# -----------------------------
+.env
+*.env
+.env.*
+*.pem
+*.key
+
+# -----------------------------
+# DOCKER
+# -----------------------------
+docker-data/
+*.tar
+
+# -----------------------------
+# KAFKA CONNECT / DEBEZIUM
+# Runtime artifacts
+connect/logs/
+connect/offsets/
+connect/status/
+
+# Plugin JARs (keep config JSON)
+connect/connector-plugins/*
+
+# -----------------------------
+# DATA FILES
+# -----------------------------
+data/
+tmp/
+*.json
+*.csv
+*.parquet
+*.avro
+
+# -----------------------------
+# LOGS
+# -----------------------------
+*.log
+
+# -----------------------------
+# EDITORS
+# -----------------------------
+.vscode/
+.idea/
+
+# -----------------------------
+# OS NOISE
+# -----------------------------
+.DS_Store
+Thumbs.db
